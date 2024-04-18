@@ -11,3 +11,11 @@ menuBtn.addEventListener('click', () => {
 closeMenu.addEventListener('click', () => {
     listItems.classList.remove('show-list-items');
 })
+
+// Scroll Top 
+
+const scrollIcons = document.querySelector('.scroll-top');
+
+scrollIcons.addEventListener('click', () => {
+    window.scrollTo({top: 0});
+})
