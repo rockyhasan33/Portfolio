@@ -217,7 +217,6 @@ img:not(.logo) {
 }
 
 .wrapper {
-    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 3rem;
@@ -310,6 +309,45 @@ img:not(.logo) {
     font-size: 3rem;
     text-decoration: none;
 
+}
+
+.wrapper-footer{
+    display: flex;
+    width: 100%;
+    max-width: 1250px;
+    padding: 0 5rem 2rem;
+    margin: 0 auto;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+
+#user-name, #user-email{
+    padding: 0.75rem 1.25rem;
+    flex: 1 1 auto;
+    font-size: 0.875rem;
+    letter-spacing: 1.25px;
+    border: none;    
+    outline: 1px solid #00beee;
+    border-radius: 0.25rem;
+}
+
+#user-name::placeholder, #user-email::placeholder {
+    color: #00beee;
+}
+
+.submit-btn {
+    padding: 0.75rem 1.5rem;
+    background: #00beee;
+    border: none;
+    font-size: 0.875rem;
+    letter-spacing: 1.5px;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    
 }
 @media (max-width: 768px) {
     nav {
